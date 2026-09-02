@@ -1,0 +1,61 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Fade Down Animations */
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-down {
+  animation: fade-down 0.8s ease-out forwards;
+}
+
+.animate-fade-down-delay-1 {
+  animation: fade-down 0.8s ease-out 0.1s forwards;
+  opacity: 0;
+}
+
+.animate-fade-down-delay-2 {
+  animation: fade-down 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-down-delay-3 {
+  animation: fade-down 0.8s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-fade-down-delay-4 {
+  animation: fade-down 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.animate-fade-down-delay-5 {
+  animation: fade-down 0.8s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+.toolset-swiper .swiper-button-prev {
+  left: -30px;
+}
+
+.toolset-swiper .swiper-button-next {
+  right: -30px;
+}
