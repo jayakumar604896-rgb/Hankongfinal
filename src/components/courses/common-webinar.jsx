@@ -88,7 +88,13 @@ const AECSection = ({ courseId }) => {
   };
   const stripHtmlTags = (html) => {
     if (!html) return '';
-    return html.replace(/<[^>]*>/g, '');
+    try {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      return doc.body.textContent || '';
+    } catch {
+      return html.replace(/<[^>]*>/g, '');
+    }
   };
   return (
     <div className="grid md:grid-cols-2 gap-6">
@@ -99,7 +105,7 @@ const AECSection = ({ courseId }) => {
         </div>
 
         <h3 className="font-semibold text-lg mt-6">
-          {notificationCard.title}
+          {stripHtmlTags(notificationCard.title)}
         </h3>
 
         <p className="text-gray-600 text-sm mt-2 mb-4">
@@ -120,11 +126,11 @@ const AECSection = ({ courseId }) => {
         </div>
 
         <h3 className="font-semibold text-lg mt-6">
-          {webinarCard.title}
+          {stripHtmlTags(webinarCard.title)}
         </h3>
 
         <p className="text-gray-600 text-sm mt-2 mb-4">
-          {stripHtmlTags(notificationCard.description)}
+          {stripHtmlTags(webinarCard.description)}
         </p>
 
         <a href={webinarCard.link} className="inline-block">

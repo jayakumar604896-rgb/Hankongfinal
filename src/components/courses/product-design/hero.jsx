@@ -2,7 +2,7 @@ import { ScreenShare, Bell } from "lucide-react";
 import CommonWebinar from "../common-webinar";
 
 const AutoCADSection = () => {
-  const courseId = 3; 
+  const courseId = 4; 
   const apiKey = '8a92f1d0c7e24b68a13f9c5d2e7b41a0';
   return (
     <section

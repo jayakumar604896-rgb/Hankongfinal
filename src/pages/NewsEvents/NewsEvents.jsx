@@ -66,7 +66,13 @@ const NewsEvents = () => {
   }
   const stripHtmlTags = (html) => {
     if (!html) return '';
-    return html.replace(/<[^>]*>/g, '');
+    try {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      return doc.body.textContent || '';
+    } catch {
+      return html.replace(/<[^>]*>/g, '');
+    }
   };
   return (
     <div className="min-h-screen bg-gray-50">
