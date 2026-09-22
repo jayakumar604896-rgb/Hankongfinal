@@ -39,7 +39,7 @@ const Hero = () => {
             {/* Heading */}
             <h1
               className="
-                mb-4
+                mb-4 lg:mt-0 mt-8
                 text-4xl font-extrabold tracking-tight
                 sm:text-5xl
                 md:text-6xl
