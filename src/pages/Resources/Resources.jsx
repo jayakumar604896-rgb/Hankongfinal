@@ -271,7 +271,7 @@ export default function AssetLibrary() {
         <div className="flex-1 p-4 md:p-6">
           <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between mb-4">
             <div className="flex items-center gap-3">
-              <h2 className="text-xl font-semibold">Exclusive Assets for Partners</h2>
+              <h2 className="text-xl font-semibold">Exclusive Assets</h2>
 
               {user && assets.length > 0 && (
                 <button
