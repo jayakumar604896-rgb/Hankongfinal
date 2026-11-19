@@ -500,7 +500,7 @@ function ContactSection({ defaultCourse = null, hideCourseSelect = false }) {
               <Phone size={20} />
             </div>
             <p className="text-gray-600">
-              <a href="https://wa.me/85298625111" target="_blank" rel="noopener noreferrer">852-98625111</a>
+              <a href="https://wa.me/85225651682" target="_blank" rel="noopener noreferrer">+852 2565 1682</a>
             </p>
           </div>
 
