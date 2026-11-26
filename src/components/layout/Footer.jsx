@@ -68,7 +68,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <div className="space-y-2 text-sm text-gray-300">
               <p>Email: <a href="mailto:info.datech@techdata.com">info.datech@techdata.com</a></p>
-              <p>Phone: <a href="https://wa.me/85225651682">+852 2565 1682</a></p>
+              <p>Phone: <a href="tel:85225651682">+852 2565 1682</a></p>
               {/* <p>Address: 21/F, Tower One, Millennium City 1, 388 Kwun Tong Road, Kwun Tong, Kowloon</p> */}
             </div>
           </div>
